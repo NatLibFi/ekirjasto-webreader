@@ -35,6 +35,7 @@ var s3EndpointFlag string
 var s3RegionFlag string
 var s3AccessKeyFlag string
 var s3SecretKeyFlag string
+var s3UsePathStyleFlag bool
 
 var httpAuthorizationFlag string
 
@@ -120,6 +121,7 @@ to the internet except for testing/debugging purposes.`,
 					o.BaseEndpoint = aws.String(s3EndpointFlag)
 				}
 				o.DisableLogOutputChecksumValidationSkipped = true // Non-AWS S3 tends not to support this and it causes logspam
+				o.UsePathStyle = s3UsePathStyleFlag
 			})
 		} else {
 			slog.Warn("S3 credentials retrieval failed, S3 support will be disabled", "error", err)
@@ -188,6 +190,7 @@ func init() {
 	serveCmd.Flags().StringVar(&s3RegionFlag, "s3-region", "auto", "S3 region")
 	serveCmd.Flags().StringVar(&s3AccessKeyFlag, "s3-access-key", "", "S3 access key")
 	serveCmd.Flags().StringVar(&s3SecretKeyFlag, "s3-secret-key", "", "S3 secret key")
+	serveCmd.Flags().BoolVar(&s3UsePathStyleFlag, "s3-use-path-style", false, "Use S3 path style buckets (default is to use virtual hosts)")
 
 	serveCmd.Flags().StringVar(&httpAuthorizationFlag, "http-authorization", "", "HTTP authorization header value (e.g. 'Bearer <token>' or 'Basic <base64-credentials>')")
 
