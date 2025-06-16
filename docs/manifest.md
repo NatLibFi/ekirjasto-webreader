@@ -119,7 +119,7 @@ Outputs are based on publications available from the [EPUB 3 Samples project](ht
 
 ### Moby Dick
 
-### Inferring metadata
+#### Inferring metadata
 
 ```sh
 readium manifest --infer-a11y=split moby-dick.epub | jq .metadata
@@ -159,7 +159,7 @@ readium manifest --infer-a11y=split moby-dick.epub | jq .metadata
 }
 ```
 
-### Inspecting images
+#### Inspecting images
 
 ```sh
 readium manifest --inspect-images moby-dick.epub | jq .resources
@@ -232,7 +232,7 @@ readium manifest --inspect-images moby-dick.epub | jq .resources
 ]
 ```
 
-### Extracting a table of contents
+#### Extracting a table of contents
 
 ```sh
 readium manifest moby-dick.epub | jq .toc
@@ -809,7 +809,7 @@ readium manifest moby-dick.epub | jq .toc
 
 ### Accessible EPUB 3
 
-### Extracting and inferring metadata
+#### Extracting and inferring metadata
 
 ```sh
 readium manifest --infer-a11y=split accessible_epub_3.epub | jq .metadata
