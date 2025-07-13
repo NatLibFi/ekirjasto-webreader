@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 **Warning:** Features marked as *alpha* may change or be removed in a future release without notice. Use with caution.
 
+## [0.3.0] - 2025-07-12
+
+### Changed
+
+- Major changes to `readium serve` [command syntax](https://github.com/readium/cli/blob/develop/docs/serve.md), to improve ease of use
+- Docker container no longer includes any test publications, an only enables http/https publication serving by default
+- Improvements to documentation
+- Updates to dependencies
+
+### Fixed
+
+- Links to services (positions list etc.) are removed from the manifest when running `readium manifest`
+
 ## [0.2.1] - 2025-06-08
 
 ### Added
