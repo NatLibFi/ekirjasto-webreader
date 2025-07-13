@@ -42,4 +42,4 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Created this project based on the command-line utilities from the [https://github.com/readium/go-toolkit](Go Toolkit)
+- Created this project based on the command-line utilities from the [Go toolkit](https://github.com/readium/go-toolkit)
