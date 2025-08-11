@@ -1,14 +1,17 @@
 package serve
 
 import (
+	"log"
 	"net/http"
 	"net/http/pprof"
 
 	"github.com/CAFxX/httpcompression"
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
 
-func (s *Server) Routes() *mux.Router {
+func (s *Server) Routes() http.Handler {
+	log.Println("töttöröö")
 	r := mux.NewRouter()
 
 	r.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
@@ -42,6 +45,18 @@ func (s *Server) Routes() *mux.Router {
 	pub.HandleFunc("/manifest.json", s.getManifest).Name("manifest")
 	pub.HandleFunc("/{asset:.*}", s.getAsset).Name("asset")
 
+	//store original router if needed
 	s.router = r
-	return r
+
+	// CORS configuration
+	c := cors.New(cors.Options{
+		AllowedOrigins:   []string{"http://localhost:3001"}, // frontend dev origin//
+		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
+		AllowedHeaders:   []string{"*"},
+		AllowCredentials: true,
+	})
+
+	handler := c.Handler(r)
+
+	return c.Handler(handler)
 }

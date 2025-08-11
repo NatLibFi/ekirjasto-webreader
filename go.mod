@@ -78,6 +78,7 @@ require (
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/readium/xmlquery v0.0.0-20230106230237-8f493145aef4 // indirect
 	github.com/relvacode/iso8601 v1.6.0 // indirect
+	github.com/rs/cors v1.11.1 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.5.0 // indirect
 	github.com/trimmer-io/go-xmp v1.0.0 // indirect
