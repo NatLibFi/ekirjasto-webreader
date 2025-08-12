@@ -211,7 +211,7 @@ implement any authentication, and may have more access to files than expected.`,
 			Handler:        pubServer.Routes(),
 		}
 		slog.Info("Starting HTTP server", "address", "http://"+httpServer.Addr)
-		slog.Info("töttörööö")
+		slog.Info("töt")
 		if err := httpServer.ListenAndServe(); err != http.ErrServerClosed {
 			slog.Error("Server stopped", "error", err)
 		} else {

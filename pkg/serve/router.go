@@ -11,7 +11,7 @@ import (
 )
 
 func (s *Server) Routes() http.Handler {
-	log.Println("töttöröö")
+	log.Println("tött")
 	r := mux.NewRouter()
 
 	r.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
