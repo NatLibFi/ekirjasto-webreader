@@ -50,10 +50,11 @@ func (s *Server) Routes() http.Handler {
 
 	// CORS configuration
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://10.44.20.155:3000", "http://localhost:3000", "http://127.0.0.1:3000"}, // frontend dev origin//
-		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
-		AllowedHeaders:   []string{"*"},
-		AllowCredentials: true,
+		//AllowedOrigins: []string{"http://10.44.20.155:3000", "http://localhost:3000", "http://127.0.0.1:3000"}, // frontend dev origin//
+		AllowedOrigins: []string{"*"}, // frontend dev origin//
+		AllowedMethods: []string{"GET", "POST", "OPTIONS"},
+		AllowedHeaders: []string{"*"},
+		//AllowCredentials: true,
 	})
 
 	handler := c.Handler(r)
