@@ -233,8 +233,8 @@ github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10/go.mod h1
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:xMI15A0UPsDsEKsMN9yxemIoYk6Tm2C1GtYGdfGttqA=
-github.com/readium/go-toolkit v0.10.2 h1:5H2Tec7hUjQ1oZ+Kx9mDhiHHfWDm908Bg9LDwdwKc8Q=
-github.com/readium/go-toolkit v0.10.2/go.mod h1:4XjLWfD6Vas2UUeXcUwAiFjV/K8eTAF/GJw+jm/90pg=
+github.com/readium/go-toolkit v0.11.0 h1:SGFF2XVe5/9cRnkLV/Wj58FMOY/Xo7dBmGz1SZI+Pjc=
+github.com/readium/go-toolkit v0.11.0/go.mod h1:4XjLWfD6Vas2UUeXcUwAiFjV/K8eTAF/GJw+jm/90pg=
 github.com/readium/xmlquery v0.0.0-20230106230237-8f493145aef4 h1:iEQhT4jOppg7EK/r4/1e4ULIeCsugv35O+sDlvce5Bo=
 github.com/readium/xmlquery v0.0.0-20230106230237-8f493145aef4/go.mod h1:S7gZ8KUgPbsdlF9/iomcwnU31iHMyFEO66+JFJE8uz8=
 github.com/relvacode/iso8601 v1.6.0 h1:eFXUhMJN3Gz8Rcq82f9DTMW0svjtAVuIEULglM7QHTU=
